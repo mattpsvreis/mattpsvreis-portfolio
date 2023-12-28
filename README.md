@@ -4,8 +4,6 @@
 <br>
 <p id="description">A portfolio project made in React + Vite w/ TypeScript to centralize all the info about myself, my career, and my projects.</p>
 <h2>🧐 Features:</h2>
-Here're some of the project's features:
-
 - About Me
 - My Projects
 - My Career
