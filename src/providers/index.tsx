@@ -4,7 +4,7 @@ import { CONTENT_THEME } from '@/constants/content-theme';
 import { ContentThemeProvider } from '@/contexts/content-theme';
 import resolveConfig from 'tailwindcss/resolveConfig';
 
-import { TailwindConfig } from '../../tailwind.config';
+import { TailwindConfig } from '../../tailwind.config.ts';
 
 interface ProvidersProps {
   children: ReactNode;
