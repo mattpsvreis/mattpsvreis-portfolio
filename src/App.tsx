@@ -1,35 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import resolveConfig from 'tailwindcss/resolveConfig';
+
+import { ContentThemeProvider } from './contexts/content-theme/content-theme.js';
+import { CONTENT_THEME } from './constants/content-theme.js';
+import { TailwindConfig } from '../tailwind.config.js';
+
+
+// @ts-ignore
+const tailwindTheme = resolveConfig(TailwindConfig);
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+  return <ContentThemeProvider theme={{
+    logo: CONTENT_THEME.logo,
+    light_logo: CONTENT_THEME.light_logo,
+    favicon: CONTENT_THEME.favicon,
+    loading_icon: CONTENT_THEME.loading_icon,
+    project_name: CONTENT_THEME.project_name,
+    cover_image: CONTENT_THEME.cover_image,
+    tailwind: tailwindTheme,
+  }}></ContentThemeProvider>;
 }
 
-export default App
+export default App;

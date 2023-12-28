@@ -32,6 +32,7 @@ yarn dev
 - React
 - Vite
 - TypeScript
+- Tailwind
 <h2>🛡️ License:</h2>
 This project is licensed under the GNU 3.0 General Public License.
 <br>

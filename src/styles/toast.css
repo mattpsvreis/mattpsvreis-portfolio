@@ -1,0 +1,23 @@
+:root {
+  --toastify-color-light: #f5f5f5;
+}
+
+.Toastify__toast--success {
+  border-left: 5px solid #2ecc71;
+}
+
+.Toastify__toast--transparent {
+  border-left: 5px solid rgba(255, 255, 255, 0.7);
+}
+
+.Toastify__toast--error {
+  border-left: 5px solid #e74c3c;
+}
+
+.Toastify__toast--info {
+  border-left: 5px solid #3498db;
+}
+
+.Toastify__toast--warning {
+  border-left: 5px solid #f1c40f;
+}

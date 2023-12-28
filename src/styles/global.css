@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue&family=Montserrat&family=Nunito&family=Poppins&family=Roboto&display=swap');
+.font-roboto {
+  font-family: 'Roboto', 'sans-serif';
+}
+.font-epilogue {
+  font-family: 'Epilogue', 'sans-serif';
+}
+.font-barlow {
+  font-family: 'Barlow', 'sans-serif';
+}
+.font-montserrat {
+  font-family: 'Montserrat', 'sans-serif';
+}
+.font-nunito {
+  font-family: 'Nunito', 'sans-serif';
+}
+.font-poppins {
+  font-family: 'Poppins', 'sans-serif';
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    @apply appearance-none;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply font-inter font-normal;
+  }
+
+  body {
+    @apply font-inter font-normal;
+  }
+
+  input.input-default:-webkit-autofill,
+  input.input-default:-webkit-autofill:focus-within {
+    -webkit-box-shadow: 0 0 0 30px theme(colors.brand.background_cards) inset;
+    -webkit-text-fill-color: theme(colors.brand.text) !important;
+  }
+}
