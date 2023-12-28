@@ -41,6 +41,6 @@ npx tsc ||
 )
 
 (
-  echo "\n ✅ - Typescript successfully compiled. I am now committing this! - 🚀\n"
+  echo "\n ✅ - Typescript successfully compiled. I am now committing this! - 🚀🔥\n"
   true;
 ) 
