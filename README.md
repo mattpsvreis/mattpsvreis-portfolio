@@ -1,6 +1,6 @@
 <h1 align="center" id="title">mattpsvreis's Portfolio</h1>
 <br>
-<p align="center"><img src="https://socialify.git.ci/mattpsvreis/mattpsvreis-portfolio/image?language=1&amp;name=1&amp;pattern=Circuit%20Board&amp;theme=Dark" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/mattpsvreis/mattpsvreis-portfolio/image?name=1&pattern=Circuit%20Board&theme=Dark" alt="project-image"></p>
 <br>
 <p id="description">A portfolio project made in React + Vite w/ TypeScript to centralize all the info about myself, my career, and my projects.</p>
 <h2>🧐 Features:</h2>
