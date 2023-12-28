@@ -10,7 +10,6 @@ Here're some of the project's features:
 - My Projects
 - My Career
 - Contact Info
-<br>
 <h2>🛠️ Installation steps:</h2>
 <p>1. Clone the repo</p>
 
@@ -35,7 +34,6 @@ yarn dev
 - React
 - Vite
 - TypeScript
-<br>
 <h2>🛡️ License:</h2>
 This project is licensed under the GNU 3.0 General Public License.
 <br>
