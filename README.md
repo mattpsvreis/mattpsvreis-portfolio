@@ -28,7 +28,6 @@ yarn
 ```
 yarn dev
 ```
-<br>
 <h2>💻 Built with:</h2>
 
 - React
@@ -37,6 +36,5 @@ yarn dev
 <h2>🛡️ License:</h2>
 This project is licensed under the GNU 3.0 General Public License.
 <br>
-<br>
-<h2>💖Like my work?</h2>
+<h2>💖 Like my work?:</h2>
 <p>Consider <a href="https://www.buymeacoffee.com/mattpsvreis" target="_blank">buying me a coffee</a>!</p>
