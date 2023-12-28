@@ -8,18 +8,7 @@ yarn lint ||
 )
 
 (
-  echo "\n ✅ - Code successfully linted, now compiling Typescript.. \n"
-  true;
-) &&
-
-npx tsc ||
-(
-  echo "\n ❌ - npx tsc Failed. - ❌\n View the errors above in order to fix them!\n"
-  false;
-)
-
-(
-  echo "\n ✅ - Typescript successfully compiled, now formatting.. \n"
+  echo "\n ✅ - Code successfully linted, now applying default formatting to the code.. \n"
   true;
 ) &&
 
@@ -30,6 +19,28 @@ yarn format ||
 )
 
 (
-  echo "\n ✅ - Code successfully formatted, I am committing this now! - 🚀\n"
+  echo "\n ✅ - Code successfully formatted, adding formatted files to git.. - 🚀\n"
   true;
+) &&
+
+git add . ||
+(
+  echo "\n ❌ - git add Failed. - ❌\n View the errors above in order to fix them!\n"
+  false;
 )
+
+(
+  echo "\n ✅ - Formatted files successfully added to git, now compiling Typescript.. - 🚀\n"
+  true;
+) &&
+
+npx tsc ||
+(
+  echo "\n ❌ - npx tsc Failed. - ❌\n View the errors above in order to fix them!\n"
+  false;
+)
+
+(
+  echo "\n ✅ - Typescript successfully compiled. \n"
+  true;
+) 
