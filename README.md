@@ -9,22 +9,26 @@ Here're some of the project's features:
 <br>
 - About Me
 - My Projects
+
 - My Career
 - Contact Info
 <br>
 <h2>🛠️ Installation steps:</h2>
 <br>
 <p>1. Clone the repo</p>
+
 ```
 git clone https://github.com/mattpsvreis/mattpsvreis-portfolio.git
 ```
 <br>
 <p>2. Run Yarn</p>
+
 ```
 yarn
 ```
 <br>
 <p>3. Run the project as dev</p>
+
 ```
 yarn dev
 ```
