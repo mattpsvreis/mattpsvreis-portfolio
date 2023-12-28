@@ -6,10 +6,9 @@
 <h2>🧐 Features:</h2>
 <br>
 Here're some of the project's features:
-<br>
+
 - About Me
 - My Projects
-
 - My Career
 - Contact Info
 <br>
@@ -34,7 +33,7 @@ yarn dev
 ```
 <br>
 <h2>💻 Built with:</h2>
-<br>
+
 - React
 - Vite
 - TypeScript
