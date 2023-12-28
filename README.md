@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">mattpsvreis's Portfolio</h1>
+<br>
+<p align="center"><img src="https://socialify.git.ci/mattpsvreis/mattpsvreis-portfolio/image?language=1&amp;name=1&amp;pattern=Circuit%20Board&amp;theme=Dark" alt="project-image"></p>
+<br>
+<p id="description">A portfolio project made in React + Vite w/ TypeScript to centralize all the info about myself, my career, and my projects.</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>🧐 Features:</h2>
+<br>
+Here're some of the project's features:
+<br>
+<br>
 
-Currently, two official plugins are available:
+* About Me
+* My Projects
+* My Career
+* Contact Info
+<br>
+<h2>🛠️ Installation steps:</h2>
+<br>
+<p>1. Clone the repo</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
 ```
+git clone https://github.com/mattpsvreis/mattpsvreis-portfolio.git
+```
+<br>
+<p>2. Run Yarn</p>
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```
+yarn
+```
+<br>
+<p>3. Run the project as dev</p>
+
+```
+yarn dev
+```
+<br>
+<h2>💻 Built with:</h2>
+<br>
+
+*   React
+*   Vite
+*   TypeScript
+<br>
+<h2>🛡️ License:</h2>
+<br>
+This project is licensed under the GNU 3.0 General Public License.
+<br>
+<br>
+<h2>💖Like my work?</h2>
+<br>
+<p>Consider <a href="https://www.buymeacoffee.com/mattpsvreis" target="_blank">buying me a coffee</a>!</p>
