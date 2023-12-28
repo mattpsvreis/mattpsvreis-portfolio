@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 export type IHttpMethod = 'post' | 'get' | 'put' | 'delete' | 'patch';
 
 export type IHttpRequest = {

@@ -10,13 +10,9 @@ module.exports = {
   plugins: ['react-refresh', 'prettier'],
   rules: {
     'no-console': 'error',
-    '@next/next/no-html-link-for-pages': 'off',
     'import/no-anonymous-default-export': 'off',
     'react-hooks/exhaustive-deps': 'off',
-    'react-refresh/only-export-components': [
-      'warn',
-      { allowConstantExport: true },
-    ],
     'prettier/prettier': 'error',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 };

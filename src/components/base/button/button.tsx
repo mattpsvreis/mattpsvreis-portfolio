@@ -1,4 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
 import { forwardRef } from 'react';
 
 import { ButtonProps } from './button.types';
@@ -58,7 +57,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             } `;
 
     return (
-      <button className={sx} ref={ref} {...props}>
+      <button className={sx && className} ref={ref} {...props}>
         {startIcon && startIcon} {children} {endIcon && endIcon}
       </button>
     );
