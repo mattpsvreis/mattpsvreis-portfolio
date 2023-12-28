@@ -6,7 +6,7 @@ function App() {
     <ErrorBoundary>
       <Providers>
         <div className='App'>
-          <h1>App</h1>
+          <h1>App Teste</h1>
         </div>
       </Providers>
     </ErrorBoundary>
