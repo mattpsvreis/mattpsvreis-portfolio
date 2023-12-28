@@ -1,8 +1,8 @@
-import CoverImage from './assets/images/cover-image.png';
-import LogoImageLight from './assets/svgs/full-white.svg';
 import loader from './assets/gifs/loader.gif';
-import LogoImage from './assets/svgs/logo.svg';
+import CoverImage from './assets/images/cover-image.png';
 import Favicon from './assets/svgs/favicon.svg';
+import LogoImageLight from './assets/svgs/full-white.svg';
+import LogoImage from './assets/svgs/logo.svg';
 
 export const CONTENT_THEME = {
   logo: LogoImage,

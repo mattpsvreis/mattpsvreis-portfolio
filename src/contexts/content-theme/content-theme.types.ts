@@ -12,6 +12,5 @@ export type CustomThemeTemplateProps = {
   };
 };
 
-
 export type ContentThemeProviderProps = CustomThemeTemplateProps &
   PropsWithChildren;
