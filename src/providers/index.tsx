@@ -16,12 +16,9 @@ export const Providers: FC<ProvidersProps> = ({ children }) => {
   return (
     <ContentThemeProvider
       theme={{
-        logo: CONTENT_THEME.logo,
-        light_logo: CONTENT_THEME.light_logo,
         favicon: CONTENT_THEME.favicon,
         loading_icon: CONTENT_THEME.loading_icon,
         project_name: CONTENT_THEME.project_name,
-        cover_image: CONTENT_THEME.cover_image,
         tailwind: tailwindTheme,
       }}
     >
