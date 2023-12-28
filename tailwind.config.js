@@ -1,4 +1,4 @@
-import { TailwindConfig } from '@atomos/tailwind/tailwind.config';
+import { TailwindConfig } from './tailwind.config.ts';
 
 /** @type {import('tailwindcss').Config} */
 export default {
