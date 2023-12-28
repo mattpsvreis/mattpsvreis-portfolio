@@ -19,7 +19,7 @@ yarn format ||
 )
 
 (
-  echo "\n ✅ - Code successfully formatted, adding formatted files to git.. - 🚀\n"
+  echo "\n ✅ - Code successfully formatted, adding formatted files to git..\n"
   true;
 ) &&
 
@@ -30,7 +30,7 @@ git add . ||
 )
 
 (
-  echo "\n ✅ - Formatted files successfully added to git, now compiling Typescript.. - 🚀\n"
+  echo "\n ✅ - Formatted files successfully added to git, now compiling Typescript..\n"
   true;
 ) &&
 
@@ -41,6 +41,6 @@ npx tsc ||
 )
 
 (
-  echo "\n ✅ - Typescript successfully compiled. \n"
+  echo "\n ✅ - Typescript successfully compiled. I am now committing this! - 🚀\n"
   true;
 ) 
