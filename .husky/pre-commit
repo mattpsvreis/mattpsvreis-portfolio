@@ -5,7 +5,7 @@ yarn lint ||
 (
   echo "\n ❌ - yarn lint Failed. - ❌\n View the errors above in order to fix them!\n"
   false;
-) &&
+)
 
 (
   echo "\n ✅ - Code successfully linted, now compiling Typescript.. \n"
@@ -16,7 +16,7 @@ npx tsc ||
 (
   echo "\n ❌ - npx tsc Failed. - ❌\n View the errors above in order to fix them!\n"
   false;
-) &&
+)
 
 (
   echo "\n ✅ - Typescript successfully compiled, now formatting.. \n"
@@ -27,7 +27,7 @@ yarn format ||
 (
   echo "\n ❌ - yarn format Failed. - ❌\n View the errors above in order to fix them!\n"
   false;
-) &&
+)
 
 (
   echo "\n ✅ - Code successfully formatted, I am committing this now! - 🚀\n"

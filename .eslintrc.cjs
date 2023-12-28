@@ -1,16 +1,13 @@
 module.exports = {
   extends: [
-    'next',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:jest/recommended',
     'plugin:prettier/recommended',
-    '',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', 'prettier'],
   rules: {
     'no-console': 'error',
     '@next/next/no-html-link-for-pages': 'off',
@@ -20,5 +17,6 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    'prettier/prettier': 'error',
   },
 };
