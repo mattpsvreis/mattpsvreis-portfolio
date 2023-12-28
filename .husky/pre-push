@@ -7,4 +7,4 @@ yarn build ||
     false;
 )
 
-echo "✅ - Build passed, I am pushing this now! - 🚀\n"
+echo "\n✅ - Build passed, I am pushing this now! - 🚀\n"
