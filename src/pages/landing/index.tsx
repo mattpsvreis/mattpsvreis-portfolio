@@ -1,11 +1,19 @@
-import { FC } from 'react';
+import { FC, Fragment } from 'react';
 
-interface LandingProps {}
+import { About } from './components/sections/about';
+import { Contact } from './components/sections/contact';
+import { Home } from './components/sections/home';
+import { Projects } from './components/sections/projects';
+import { Skills } from './components/sections/skills';
 
-export const Landing: FC<LandingProps> = () => {
+export const Landing: FC = () => {
   return (
-    <div>
-      <h1>Landing</h1>
-    </div>
+    <Fragment>
+      <Home />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+    </Fragment>
   );
 };

@@ -6,7 +6,7 @@ import { NavbarItem } from './components/item';
 
 export const Navbar: FC = () => {
   return (
-    <div
+    <nav
       id='navbar'
       className='fixed flex h-24 w-full flex-row items-center justify-between border-b-2 bg-black/60 px-16'
     >
@@ -45,6 +45,6 @@ export const Navbar: FC = () => {
         <NavbarItem content='Skills' href='#skills' target='_self' />
         <NavbarItem content='Contato' href='#contact' target='_self' />
       </div>
-    </div>
+    </nav>
   );
 };
