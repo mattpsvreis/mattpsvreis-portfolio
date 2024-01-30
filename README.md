@@ -2,12 +2,12 @@
 <br>
 <p align="center"><img src="https://socialify.git.ci/mattpsvreis/mattpsvreis-portfolio/image?name=1&pattern=Circuit%20Board&theme=Dark" alt="project-image"></p>
 <br>
-<p id="description">A portfolio project made in React + Vite w/ TypeScript to centralize all the info about myself, my career, and my projects.</p>
+<p id="description">A portfolio project made in React + Vite + TypeScript + TailwindCSS to centralize all the info about myself, my projects, and my skills.</p>
 <h2>🧐 Features:</h2>
 
 - About Me
 - My Projects
-- My Career
+- My Skills
 - Contact Info
 <h2>🛠️ Installation steps:</h2>
 <p>1. Clone the repo</p>
@@ -35,7 +35,7 @@ yarn dev
 - React
 - Vite
 - TypeScript
-- Tailwind
+- TailwindCSS
 <h2>🛡️ License:</h2>
 This project is licensed under the GNU 3.0 General Public License.
 <br>
