@@ -24,6 +24,10 @@
   font-family: 'Poppins', 'sans-serif';
 }
 
+.bg-main {
+  background-image: url('/src/assets/gifs/stars.gif');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
