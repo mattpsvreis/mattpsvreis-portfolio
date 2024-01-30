@@ -1,11 +1,10 @@
 import { Providers } from './providers/index.tsx';
+import { MainRoutes } from './routes/index.tsx';
 
 function App() {
   return (
     <Providers>
-      <div className='App'>
-        <h1>App Teste</h1>
-      </div>
+      <MainRoutes />
     </Providers>
   );
 }

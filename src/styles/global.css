@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue&family=Montserrat&family=Nunito&family=Poppins&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .font-roboto {
   font-family: 'Roboto', 'sans-serif';
 }
@@ -21,38 +27,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer utilities {
-  @variants responsive {
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-
-    .no-scrollbar {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-    }
-  }
-
-  input[type='number']::-webkit-inner-spin-button,
-  input[type='number']::-webkit-outer-spin-button {
-    @apply appearance-none;
-  }
-}
-
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    @apply font-inter font-normal;
-  }
-
-  body {
-    @apply font-inter font-normal;
-  }
-
-  input.input-default:-webkit-autofill,
-  input.input-default:-webkit-autofill:focus-within {
-    -webkit-box-shadow: 0 0 0 30px theme(colors.brand.background_cards) inset;
-    -webkit-text-fill-color: theme(colors.brand.text) !important;
-  }
-}
