@@ -1,4 +1,4 @@
-import { Providers } from './providers/index.ts';
+import { Providers } from './providers/index.tsx';
 
 function App() {
   return (
