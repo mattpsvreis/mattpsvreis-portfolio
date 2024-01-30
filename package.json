@@ -12,7 +12,8 @@
     "check-types": "tsc --pretty --noEmit",
     "check-format": "prettier --check .",
     "check-lint": "eslint . --ext ts --ext tsx --ext js",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:staged": "prettier --write --parser typescript $(git diff --cached --name-only --diff-filter=d | grep -E '\\.(js|jsx|ts|tsx)$')"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",

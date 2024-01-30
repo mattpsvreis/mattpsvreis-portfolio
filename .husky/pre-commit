@@ -1,6 +1,16 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
+yarn ||
+(
+  echo "\n ❌ - yarn Failed. - Failure in updating dependencies. - ❌\n View the errors above in order to fix them!\n"
+)
+
+(
+  echo "\n ✅ - Dependencies successfully updated, now linting code..\n"
+  true;
+) &&
+
 yarn lint ||
 (
   echo "\n ❌ - yarn lint Failed. - ❌\n View the errors above in order to fix them!\n"
@@ -12,25 +22,27 @@ yarn lint ||
   true;
 ) &&
 
-yarn format ||
+yarn format:staged ||
 (
-  echo "\n ❌ - yarn format Failed. - ❌\n View the errors above in order to fix them!\n"
+  echo "\n ❌ - yarn format:staged Failed. - ❌\n View the errors above in order to fix them!\n"
   false;
 )
 
 (
-  echo "\n ✅ - Code successfully formatted, adding formatted files to git..\n"
+  echo "\n ✅ - Code successfully formatted, now adding formatted files to git.. \n"
   true;
 ) &&
 
-git add . ||
+modified_files=$(git status --porcelain | awk '$1 == "M" || $1 == "MM" {print $2}')
+
+git add $modified_files ||
 (
   echo "\n ❌ - git add Failed. - ❌\n View the errors above in order to fix them!\n"
   false;
 )
 
 (
-  echo "\n ✅ - Formatted files successfully added to git, now compiling Typescript..\n"
+  echo "\n ✅ - Formatted files successfully added to git, now compiling TypeScript..\n"
   true;
 ) &&
 
