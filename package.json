@@ -16,6 +16,7 @@
     "format:staged": "prettier --write --parser typescript $(git diff --cached --name-only --diff-filter=d | grep -E '\\.(js|jsx|ts|tsx)$')"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.0.15",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.3",
     "clsx": "^2.0.0",
