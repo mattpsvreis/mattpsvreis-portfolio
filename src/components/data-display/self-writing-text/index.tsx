@@ -7,13 +7,11 @@ import '@styles/blinking-cursor.css';
 
 interface SelfWritingTextProps {
   text: string | string[];
-  delay: number | number[];
   className?: string;
 }
 
 export const SelfWritingText: FC<SelfWritingTextProps> = ({
   text,
-  delay,
   className,
 }) => {
   const [displayText, setDisplayText] = useState<string>('');
@@ -75,12 +73,9 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
 
       return () => clearInterval(writeInterval);
     } else {
-      timeout = setTimeout(
-        () => {
-          setIsDeleting(true);
-        },
-        Array.isArray(delay) ? delay[currentTextIndex] : delay
-      );
+      timeout = setTimeout(() => {
+        setIsDeleting(true);
+      }, currentText.length * 35);
     }
 
     if (isDeleting) {

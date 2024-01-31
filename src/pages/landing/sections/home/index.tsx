@@ -20,7 +20,6 @@ export const Home: FC = () => {
             'Me chamo Mateus Reis, tenho 23 anos, e sou do Rio de Janeiro.',
             'Sou um Desenvolvedor Web Full-Stack, e estou em busca de novas oportunidades.',
           ]}
-          delay={[1500, 2200, 2600]}
           className='-mt-24 text-center text-3xl'
         />
       </SectionWrapper>
