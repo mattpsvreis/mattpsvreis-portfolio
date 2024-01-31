@@ -17,7 +17,7 @@ export const SectionWrapper: FC<SectionWrapperProps> = ({
     <section
       id={section}
       className={clsx(
-        'h-screen px-16',
+        'h-screen px-8 sm:px-16',
         {
           'bg-about': section === 'about',
           'bg-projects': section === 'projects',
