@@ -10,7 +10,7 @@ interface NavbarItemProps {
 
 export const NavbarItem: FC<NavbarItemProps> = ({ content, href, target }) => {
   return (
-    <div id='navbar-item' className='text-lg transition-all hover:scale-110'>
+    <div id='navbar-item' className='text-xl transition-all hover:scale-110'>
       <a href={href} target={target}>
         {content}
       </a>

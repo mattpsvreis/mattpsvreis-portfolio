@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue&family=Montserrat&family=Nunito&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue&family=Montserrat&family=Nunito&family=Poppins&family=Roboto&family=Tektur&display=swap');
 
 * {
   margin: 0;
@@ -11,6 +11,9 @@ html {
 
 .font-roboto {
   font-family: 'Roboto', 'sans-serif';
+}
+.font-tektur {
+  font-family: 'Tektur', 'sans-serif';
 }
 .font-epilogue {
   font-family: 'Epilogue', 'sans-serif';

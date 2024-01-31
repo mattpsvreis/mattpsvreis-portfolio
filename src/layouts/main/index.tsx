@@ -11,7 +11,7 @@ export const Main: FC<MainProps> = ({ children }) => {
   return (
     <main
       id='main'
-      className='font-roboto bg-main flex min-h-screen w-full flex-col text-white'
+      className='font-tektur bg-main flex min-h-screen w-full flex-col text-white'
     >
       <Navbar />
       <section id='content' className='min-h-full w-full'>

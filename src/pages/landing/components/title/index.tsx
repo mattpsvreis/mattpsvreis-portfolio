@@ -6,7 +6,7 @@ interface TitleProps {
 
 export const Title: FC<TitleProps> = ({ content }) => {
   return (
-    <div className='w-full text-center text-4xl'>
+    <div className='w-full text-center text-5xl'>
       <h1 className=''>{content}</h1>
     </div>
   );
