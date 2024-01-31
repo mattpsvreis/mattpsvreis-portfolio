@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import { SectionWrapper } from '../../section-wrapper';
-import { Title } from '../../title';
+import { SectionWrapper } from '../../components/section-wrapper';
+import { Title } from '../../components/title';
 
 export const Contact: FC = () => {
   return (

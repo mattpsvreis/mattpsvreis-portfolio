@@ -1,6 +1,6 @@
 import { FC, Fragment } from 'react';
 
-import { SectionWrapper } from '../../section-wrapper';
+import { SectionWrapper } from '../../components/section-wrapper';
 
 export const Home: FC = () => {
   return (
