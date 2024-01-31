@@ -4,7 +4,7 @@ import { FC, useEffect, useState } from 'react';
 import clsx from 'clsx';
 
 interface SelfWritingTextProps {
-  text: string;
+  text: string | string[];
   className?: string;
 }
 
@@ -13,25 +13,39 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
   className,
 }) => {
   const [displayText, setDisplayText] = useState<string>('');
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentDisplayIndex, setCurrentDisplayIndex] = useState<number>(0);
+  const [currentText, setCurrentText] = useState<string>(() =>
+    typeof text === 'string' ? text : text[0]
+  );
+  const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
+
   const [isWriting, setIsWriting] = useState<boolean>(true);
   const [isDeleting, setIsDeleting] = useState<boolean>(false);
 
   function writeText() {
-    if (currentIndex < text.length) {
+    if (currentDisplayIndex < currentText.length) {
       setDisplayText((prevText) =>
-        prevText ? prevText + text[currentIndex] : text[currentIndex]
+        prevText
+          ? prevText + currentText[currentDisplayIndex]
+          : currentText[currentDisplayIndex]
       );
-      setCurrentIndex((prevIndex) => prevIndex + 1);
+      setCurrentDisplayIndex((prevIndex) => prevIndex + 1);
     } else {
+      if (Array.isArray(text)) {
+        if (currentTextIndex < text.length - 1) {
+          setCurrentTextIndex((prevIndex) => prevIndex + 1);
+        } else {
+          setCurrentTextIndex(0);
+        }
+      }
       setIsWriting(false);
     }
   }
 
   function unwriteText() {
-    if (currentIndex >= 0) {
+    if (currentDisplayIndex >= 0) {
       setDisplayText((prevText) => prevText.slice(0, -1));
-      setCurrentIndex((prevIndex) => prevIndex - 1);
+      setCurrentDisplayIndex((prevIndex) => prevIndex - 1);
     } else {
       setDisplayText('');
       setIsDeleting(false);
@@ -43,6 +57,14 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
     let timeout: NodeJS.Timeout;
 
     if (isWriting) {
+      if (Array.isArray(text)) {
+        setCurrentText(text[currentTextIndex]);
+      }
+
+      if (typeof text === 'string') {
+        setCurrentText(text);
+      }
+
       const writeInterval = setInterval(() => {
         writeText();
       }, 50);
@@ -68,7 +90,7 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
     if (timeout) {
       return () => clearTimeout(timeout);
     }
-  }, [currentIndex, isWriting, isDeleting, text]);
+  }, [currentDisplayIndex, isWriting, isDeleting, text]);
 
   return <p className={clsx('', className)}>{displayText}</p>;
 };

@@ -11,7 +11,7 @@ export const Home: FC = () => {
         section='home'
         className='flex items-center justify-center pt-24'
       >
-        <SelfWritingText text={'SCROLLING TEXT'} />
+        <SelfWritingText text={['SCROLLING TEXT', 'TEXT 2']} />
         <hr />
       </SectionWrapper>
     </Fragment>
