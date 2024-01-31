@@ -1,11 +1,14 @@
 import { FC, Fragment } from 'react';
 
+import { SectionWrapper } from '../../section-wrapper';
+import { Title } from '../../title';
+
 export const About: FC = () => {
   return (
     <Fragment>
-      <section id='about' className='bg-about h-screen px-16 pt-24'>
-        <h1>About</h1>
-      </section>
+      <SectionWrapper section='about'>
+        <Title content='Sobre Mim' />
+      </SectionWrapper>
       <hr />
     </Fragment>
   );

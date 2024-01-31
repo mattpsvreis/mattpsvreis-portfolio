@@ -40,7 +40,7 @@ export const Navbar: FC = () => {
         className='flex h-full w-1/2 items-center justify-end gap-8'
       >
         <NavbarItem content='Home' href='#home' target='_self' />
-        <NavbarItem content='Sobre mim' href='#about' target='_self' />
+        <NavbarItem content='Sobre Mim' href='#about' target='_self' />
         <NavbarItem content='Projetos' href='#projects' target='_self' />
         <NavbarItem content='Skills' href='#skills' target='_self' />
         <NavbarItem content='Contato' href='#contact' target='_self' />

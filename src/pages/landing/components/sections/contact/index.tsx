@@ -1,9 +1,12 @@
 import { FC } from 'react';
 
+import { SectionWrapper } from '../../section-wrapper';
+import { Title } from '../../title';
+
 export const Contact: FC = () => {
   return (
-    <section id='contact' className='bg-contact h-screen px-16 pt-24'>
-      <h1>Contact</h1>
-    </section>
+    <SectionWrapper section='contact'>
+      <Title content='Contato' />
+    </SectionWrapper>
   );
 };
