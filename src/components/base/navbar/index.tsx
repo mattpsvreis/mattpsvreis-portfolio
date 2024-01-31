@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import * as Icon from '@phosphor-icons/react';
+import * as Icon from 'react-icons/fa6';
 
 import { NavbarItem } from './components/item';
 
@@ -15,22 +15,22 @@ export const Navbar: FC = () => {
         className='flex h-full w-1/2 items-center justify-start gap-8'
       >
         <NavbarItem
-          content={<Icon.GithubLogo size={32} />}
+          content={<Icon.FaGithub size={32} />}
           href='https://github.com/mattpsvreis'
           target='_blank'
         />
         <NavbarItem
-          content={<Icon.LinkedinLogo size={32} />}
+          content={<Icon.FaLinkedin size={32} />}
           href='https://www.linkedin.com/in/mateuspsvreis'
           target='_blank'
         />
         <NavbarItem
-          content={<Icon.EnvelopeSimple size={32} />}
+          content={<Icon.FaEnvelope size={32} />}
           href='mailto:mateuspsvreis@gmail.com'
           target='_blank'
         />
         <NavbarItem
-          content={<Icon.WhatsappLogo size={32} />}
+          content={<Icon.FaWhatsapp size={32} />}
           href='https://wa.me/5524993209529'
           target='_blank'
         />

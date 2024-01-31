@@ -1,5 +1,7 @@
 import { FC, Fragment } from 'react';
 
+import { SelfWritingText } from '@/components/data-display/self-writing-text';
+
 import { SectionWrapper } from '../../components/section-wrapper';
 
 export const Home: FC = () => {
@@ -9,9 +11,9 @@ export const Home: FC = () => {
         section='home'
         className='flex items-center justify-center pt-24'
       >
-        <p>SCROLLING TEXT</p>
+        <SelfWritingText text={'SCROLLING TEXT'} />
+        <hr />
       </SectionWrapper>
-      <hr />
     </Fragment>
   );
 };
