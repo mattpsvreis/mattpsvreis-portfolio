@@ -1,6 +1,9 @@
 import { FC, Fragment } from 'react';
 
 import { SelfWritingText } from '@/components/data-display/self-writing-text';
+import * as Icon from 'react-icons/fa6';
+
+import '@styles/blinking-arrow.css';
 
 import { SectionWrapper } from '../../components/section-wrapper';
 
@@ -21,6 +24,11 @@ export const Home: FC = () => {
           className='text-center text-3xl'
         />
       </SectionWrapper>
+      <div className='flex items-center justify-center'>
+        <a href='#about' target='_self'>
+          <Icon.FaArrowDown size={36} className='blinking-arrow -mt-16' />
+        </a>
+      </div>
       <hr />
     </Fragment>
   );
