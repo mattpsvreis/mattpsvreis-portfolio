@@ -11,7 +11,15 @@ export const Home: FC = () => {
         section='home'
         className='flex items-center justify-center pt-24'
       >
-        <SelfWritingText text={['SCROLLING TEXT', 'TEXT 2']} />
+        <SelfWritingText
+          text={[
+            'Olá! Seja bem-vindo ao meu portfólio! =)',
+            'Me chamo Mateus Reis, tenho 23 anos, e sou do Rio de Janeiro.',
+            'Sou um Desenvolvedor Web Full-Stack, e estou em busca de novas oportunidades.',
+          ]}
+          delay={[1500, 2200, 2600]}
+          className='text-center text-3xl'
+        />
         <hr />
       </SectionWrapper>
     </Fragment>

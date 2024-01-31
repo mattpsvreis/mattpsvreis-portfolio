@@ -3,13 +3,17 @@ import { FC, useEffect, useState } from 'react';
 
 import clsx from 'clsx';
 
+import '@styles/blinking-cursor.css';
+
 interface SelfWritingTextProps {
   text: string | string[];
+  delay: number | number[];
   className?: string;
 }
 
 export const SelfWritingText: FC<SelfWritingTextProps> = ({
   text,
+  delay,
   className,
 }) => {
   const [displayText, setDisplayText] = useState<string>('');
@@ -71,9 +75,12 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
 
       return () => clearInterval(writeInterval);
     } else {
-      timeout = setTimeout(() => {
-        setIsDeleting(true);
-      }, 2000);
+      timeout = setTimeout(
+        () => {
+          setIsDeleting(true);
+        },
+        Array.isArray(delay) ? delay[currentTextIndex] : delay
+      );
     }
 
     if (isDeleting) {
@@ -92,5 +99,10 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
     }
   }, [currentDisplayIndex, isWriting, isDeleting, text]);
 
-  return <p className={clsx('', className)}>{displayText}</p>;
+  return (
+    <p className={clsx('', className)}>
+      {displayText}
+      <span className='blinking-cursor'>|</span>
+    </p>
+  );
 };
