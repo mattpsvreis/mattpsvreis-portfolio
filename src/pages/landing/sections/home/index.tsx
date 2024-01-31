@@ -20,8 +20,8 @@ export const Home: FC = () => {
           delay={[1500, 2200, 2600]}
           className='text-center text-3xl'
         />
-        <hr />
       </SectionWrapper>
+      <hr />
     </Fragment>
   );
 };
