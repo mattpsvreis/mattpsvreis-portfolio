@@ -32,6 +32,22 @@ html {
   background-image: url('/src/assets/gifs/stars.gif');
 }
 
+.bg-about {
+  background-image: url('/src/assets/images/nebula.jpeg');
+}
+
+.bg-projects {
+  background-image: url('/src/assets/images/space.jpeg');
+}
+
+.bg-skills {
+  background-image: url('/src/assets/images/space2.jpeg');
+}
+
+.bg-contact {
+  background-image: url('/src/assets/images/linen.jpeg');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
