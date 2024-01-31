@@ -21,7 +21,7 @@ export const Home: FC = () => {
             'Sou um Desenvolvedor Web Full-Stack, e estou em busca de novas oportunidades.',
           ]}
           delay={[1500, 2200, 2600]}
-          className='text-center text-3xl'
+          className='-mt-24 text-center text-3xl'
         />
       </SectionWrapper>
       <div className='flex items-center justify-center'>

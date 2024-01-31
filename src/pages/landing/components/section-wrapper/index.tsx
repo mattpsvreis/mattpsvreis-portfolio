@@ -23,8 +23,7 @@ export const SectionWrapper: FC<SectionWrapperProps> = ({
           'bg-projects': section === 'projects',
           'bg-skills': section === 'skills',
           'bg-contact': section === 'contact',
-          'pt-24': section === 'home',
-          'pt-48': section !== 'home',
+          'pt-24 sm:pt-36': section !== 'home',
         },
         className
       )}
