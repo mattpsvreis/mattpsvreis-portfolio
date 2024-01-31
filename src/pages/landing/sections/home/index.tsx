@@ -13,7 +13,7 @@ export const Home: FC = () => {
       >
         <SelfWritingText
           text={[
-            'Olá! Seja bem-vindo ao meu portfólio! =)',
+            'Olá! Seja bem-vindo(a) ao meu portfólio! =)',
             'Me chamo Mateus Reis, tenho 23 anos, e sou do Rio de Janeiro.',
             'Sou um Desenvolvedor Web Full-Stack, e estou em busca de novas oportunidades.',
           ]}
