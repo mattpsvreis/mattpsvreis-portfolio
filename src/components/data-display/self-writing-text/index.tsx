@@ -1,18 +1,19 @@
-// No need to import React in React 17 or later
 import { FC, useEffect, useState } from 'react';
-
-import clsx from 'clsx';
 
 import '@styles/blinking-cursor.css';
 
-interface SelfWritingTextProps {
+interface ISelfWritingTextProps {
   text: string | string[];
   className?: string;
+  speed?: 'fast' | 'medium' | 'slow';
+  blinkingCursor?: boolean;
 }
 
-export const SelfWritingText: FC<SelfWritingTextProps> = ({
+export const SelfWritingText: FC<ISelfWritingTextProps> = ({
   text,
   className,
+  speed = 'medium',
+  blinkingCursor = true,
 }) => {
   const [displayText, setDisplayText] = useState<string>('');
   const [currentDisplayIndex, setCurrentDisplayIndex] = useState<number>(0);
@@ -55,6 +56,22 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
     }
   }
 
+  function interpretSpeed(
+    writing: boolean,
+    speed: 'fast' | 'medium' | 'slow'
+  ): number {
+    switch (speed) {
+      case 'fast':
+        return writing ? 25 : 10;
+      case 'medium':
+        return writing ? 50 : 25;
+      case 'slow':
+        return writing ? 100 : 40;
+      default:
+        return writing ? 50 : 25;
+    }
+  }
+
   useEffect(() => {
     let timeout: NodeJS.Timeout;
 
@@ -67,9 +84,12 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
         setCurrentText(text);
       }
 
-      const writeInterval = setInterval(() => {
-        writeText();
-      }, 50);
+      const writeInterval = setInterval(
+        () => {
+          writeText();
+        },
+        interpretSpeed(true, speed)
+      );
 
       return () => clearInterval(writeInterval);
     } else {
@@ -79,9 +99,12 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
     }
 
     if (isDeleting) {
-      const unwriteInterval = setInterval(() => {
-        unwriteText();
-      }, 25);
+      const unwriteInterval = setInterval(
+        () => {
+          unwriteText();
+        },
+        interpretSpeed(false, speed)
+      );
 
       return () => {
         clearInterval(unwriteInterval);
@@ -95,9 +118,9 @@ export const SelfWritingText: FC<SelfWritingTextProps> = ({
   }, [currentDisplayIndex, isWriting, isDeleting, text]);
 
   return (
-    <p className={clsx('', className)}>
+    <p className={className}>
       {displayText}
-      <span className='blinking-cursor'>|</span>
+      {blinkingCursor && <span className='blinking-cursor'>|</span>}
     </p>
   );
 };

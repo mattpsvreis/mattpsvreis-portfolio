@@ -15,11 +15,13 @@ export const Home: FC = () => {
         className='flex items-center justify-center pt-24'
       >
         <SelfWritingText
+          blinkingCursor
           text={[
             'Olá! Seja bem-vindo(a) ao meu portfólio! =)',
             'Me chamo Mateus Reis, tenho 23 anos, e sou do Rio de Janeiro.',
             'Sou um Desenvolvedor Web Full-Stack, e estou em busca de novas oportunidades.',
           ]}
+          speed='medium'
           className='-mt-24 text-center text-3xl'
         />
       </SectionWrapper>
