@@ -5,7 +5,7 @@ import clsx from 'clsx';
 interface SectionWrapperProps {
   children: ReactNode;
   className?: string;
-  section: 'home' | 'about' | 'projects' | 'skills' | 'contact';
+  section: 'top' | 'middle' | 'bottom';
 }
 
 export const SectionWrapper: FC<SectionWrapperProps> = ({
@@ -19,11 +19,7 @@ export const SectionWrapper: FC<SectionWrapperProps> = ({
       className={clsx(
         'h-screen px-8 sm:px-16',
         {
-          'bg-about': section === 'about',
-          'bg-projects': section === 'projects',
-          'bg-skills': section === 'skills',
-          'bg-contact': section === 'contact',
-          'pt-24 sm:pt-36': section !== 'home',
+          'pt-24 sm:pt-36': section !== 'middle',
         },
         className
       )}

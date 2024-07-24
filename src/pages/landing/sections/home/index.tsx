@@ -11,7 +11,7 @@ export const Home: FC = () => {
   return (
     <Fragment>
       <SectionWrapper
-        section='home'
+        section='top'
         className='flex items-center justify-center pt-24'
       >
         <SelfWritingText
