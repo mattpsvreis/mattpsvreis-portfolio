@@ -1,7 +1,6 @@
 import { FC, Fragment } from 'react';
 
 import { SelfWritingText } from '@/components/data-display/self-writing-text';
-import * as Icon from 'react-icons/fa6';
 
 import '@styles/blinking-arrow.css';
 
@@ -17,20 +16,20 @@ export const Home: FC = () => {
         <SelfWritingText
           blinkingCursor
           text={[
-            'Olá! Seja bem-vindo(a) ao meu portfólio! =)',
-            'Me chamo Mateus Reis, tenho 23 anos, e sou do Rio de Janeiro.',
-            'Sou um Desenvolvedor Web Full-Stack, e estou em busca de novas oportunidades.',
+            `Hey there, stranger! =)`,
+            `My name's Mateus Reis, I'm 23, and I am a Fullstack Web Developer, AI Enthusiast, and Technical Trailblazer.`,
+            `I have three years of experience developing complex applications of varied sizes.`,
+            `I'm always looking for new challenges and opportunities to grow my skills and knowledge, feel free to reach out if you're interested. ;)`,
           ]}
           speed='medium'
           className='-mt-24 text-center text-3xl'
         />
       </SectionWrapper>
-      <div className='flex items-center justify-center'>
+      {/* <div className='flex items-center justify-center'>
         <a href='#about' target='_self'>
-          <Icon.FaArrowDown size={36} className='blinking-arrow -mt-16' />
+          <FaArrowDown size={36} className='blinking-arrow -mt-16' />
         </a>
-      </div>
-      <hr />
+      </div> */}
     </Fragment>
   );
 };

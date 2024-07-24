@@ -95,7 +95,7 @@ export const SelfWritingText: FC<ISelfWritingTextProps> = ({
     } else {
       timeout = setTimeout(() => {
         setIsDeleting(true);
-      }, currentText.length * 35);
+      }, currentText.length * 40);
     }
 
     if (isDeleting) {
