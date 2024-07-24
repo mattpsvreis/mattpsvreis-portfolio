@@ -17,7 +17,7 @@ export const Home: FC = () => {
           blinkingCursor
           text={[
             `Hey there, stranger! =)`,
-            `My name's Mateus Reis, I'm 23, and I am a Fullstack Web Developer, AI Enthusiast, and Technical Trailblazer.`,
+            `My name's Mateus Reis, I'm 23, and I'm a Fullstack Web Developer, AI Enthusiast, and Technical Trailblazer.`,
             `I have three years of experience developing complex applications of varied sizes.`,
             `I'm always looking for new challenges and opportunities to grow my skills and knowledge, feel free to reach out if you're interested. ;)`,
           ]}
