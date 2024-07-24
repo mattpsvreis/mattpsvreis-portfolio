@@ -6,6 +6,7 @@ module.exports = {
   singleQuote: true,
   jsxSingleQuote: true,
   semi: true,
+  tailwindConfig: './tailwind.config.js',
   plugins: [
     '@trivago/prettier-plugin-sort-imports',
     'prettier-plugin-tailwindcss',

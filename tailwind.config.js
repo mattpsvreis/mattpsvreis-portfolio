@@ -4,5 +4,13 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.text-glow': {
+          'text-shadow': '0 0 10px rgba(255, 255, 255, 0.3)',
+        },
+      });
+    },
+  ],
 };

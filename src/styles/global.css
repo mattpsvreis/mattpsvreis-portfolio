@@ -33,6 +33,7 @@ html {
 
 .bg-main {
   background-image: url('/src/assets/gifs/stars.gif');
+  opacity: 1;
 }
 
 .bg-about {
