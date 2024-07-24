@@ -1,11 +1,11 @@
-import { FC, Fragment } from 'react';
+import { FC } from 'react';
 
 import { Home } from './sections/home';
 
 export const Landing: FC = () => {
   return (
-    <Fragment>
+    <div className='flex w-full flex-col items-center'>
       <Home />
-    </Fragment>
+    </div>
   );
 };

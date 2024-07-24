@@ -25,8 +25,8 @@ export const Navbar: FC = () => {
     <nav
       id='navbar'
       className={clsx(
-        'fixed flex h-16 w-full flex-row items-center justify-between border-b-2 px-8 sm:h-24 sm:px-16',
-        { 'bg-black/95': menuOpen, 'bg-black/60': !menuOpen }
+        'fixed flex h-20 w-full flex-row items-center justify-between px-8 md:h-24 md:px-[420px]',
+        { 'bg-black/95': menuOpen }
       )}
     >
       <div

@@ -11,7 +11,7 @@ export const Home: FC = () => {
     <Fragment>
       <SectionWrapper
         section='top'
-        className='flex items-center justify-center pt-24'
+        className='flex max-w-3xl items-center justify-center pt-24'
       >
         <SelfWritingText
           blinkingCursor
