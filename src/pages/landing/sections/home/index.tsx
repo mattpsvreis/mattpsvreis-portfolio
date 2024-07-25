@@ -90,6 +90,11 @@ export const Home: FC = () => {
                       {'my projects... >'}
                     </Link>
                   </li>
+                  <li className='ml-16 list-circle'>
+                    <Link to='/articles' target='_blank' className='underline'>
+                      {'my articles... >'}
+                    </Link>
+                  </li>
                 </ul>
                 <li className='ml-8'>
                   <b>my links : </b>
