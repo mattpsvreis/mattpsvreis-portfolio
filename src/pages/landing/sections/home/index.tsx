@@ -1,6 +1,7 @@
 import { FC, Fragment } from 'react';
 
 import pp from '@assets/images/pp.jpg';
+import { Link } from 'react-router-dom';
 
 // import { SelfWritingText } from '@/components/data-display/self-writing-text';
 import '@styles/blinking-arrow.css';
@@ -8,6 +9,16 @@ import '@styles/blinking-arrow.css';
 import { SectionWrapper } from '../../components/section-wrapper';
 
 export const Home: FC = () => {
+  const age: number = getAge();
+
+  function getAge() {
+    if (new Date().getMonth() < new Date(2000, 10, 8).getMonth()) {
+      return new Date().getFullYear() - 2000 - 1;
+    } else {
+      return new Date().getFullYear() - 2000;
+    }
+  }
+
   return (
     <Fragment>
       <SectionWrapper
@@ -18,12 +29,10 @@ export const Home: FC = () => {
           <div className='flex w-full flex-col items-start justify-start gap-6 xl:flex-row 4xl:flex-col'>
             <img src={pp} alt='' className='h-64 4xl:self-center' />
             <div className='flex flex-col items-start justify-start gap-4'>
-              <a href='' target='_blank' className='text-2xl'>
-                mattpsvreis 🏴‍☠️
-              </a>
+              <p className='text-2xl'>mattpsvreis 🏴‍☠️</p>
               <div>
                 <p>
-                  <b>Mateus Reis</b>, 23 yo, RJ - Brazil
+                  <b>Mateus Reis</b>, {age} yo, RJ - Brazil
                 </p>
                 <p>
                   Fullstack Web Developer, AI Enthusiast, and Technical
@@ -34,7 +43,11 @@ export const Home: FC = () => {
                 {'> currently working as a Frontend Developer @ '}
                 <b>{'Atomos Oficial'}</b>
               </p>
-              <a href='' target='_blank' className='text-lg underline'>
+              <a
+                href='https://open.spotify.com/user/2233hoxe7q3q2oxj472qllrba?si=4b0716d193f74067'
+                target='_blank'
+                className='text-lg underline'
+              >
                 <i>🪄 some music I listen to 🎶</i>
               </a>
             </div>
@@ -73,9 +86,9 @@ export const Home: FC = () => {
                 </li>
                 <ul className='flex list-disc flex-col gap-2'>
                   <li className='ml-16 list-circle'>
-                    <a href='' target='_blank' className='underline'>
+                    <Link to='/projects' target='_blank' className='underline'>
                       {'my projects... >'}
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <li className='ml-8'>
@@ -83,22 +96,38 @@ export const Home: FC = () => {
                 </li>
                 <ul className='flex list-disc flex-col gap-2'>
                   <li className='ml-16 list-circle'>
-                    <a href='' target='_blank' className='underline'>
+                    <a
+                      href='https://github.com/mattpsvreis'
+                      target='_blank'
+                      className='underline'
+                    >
                       GitHub
                     </a>
                   </li>
                   <li className='ml-16 list-circle'>
-                    <a href='' target='_blank' className='underline'>
+                    <a
+                      href='https://www.linkedin.com/in/mateuspsvreis/'
+                      target='_blank'
+                      className='underline'
+                    >
                       LinkedIn
                     </a>
                   </li>
                   <li className='ml-16 list-circle'>
-                    <a href='' target='_blank' className='underline'>
+                    <a
+                      href='https://x.com/amasterofart'
+                      target='_blank'
+                      className='underline'
+                    >
                       Twitter
                     </a>
                   </li>
                   <li className='ml-16 list-circle'>
-                    <a href='' target='_blank' className='underline'>
+                    <a
+                      href='https://www.instagram.com/matt.reis__/'
+                      target='_blank'
+                      className='underline'
+                    >
                       Insta
                     </a>
                   </li>

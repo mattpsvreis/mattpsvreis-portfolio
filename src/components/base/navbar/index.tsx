@@ -35,7 +35,7 @@ export const Navbar: FC = () => {
       >
         <NavbarItem
           content={<img src={favicon} className='h-20' />}
-          href='#home'
+          href='/'
           target='_self'
         />
       </div>
@@ -73,7 +73,19 @@ export const Navbar: FC = () => {
         <NavbarItem
           content='Home'
           onClick={handleMenu}
-          href='#home'
+          href='/'
+          target='_self'
+        />
+        <NavbarItem
+          content='Projects'
+          onClick={handleMenu}
+          href='/projects'
+          target='_self'
+        />
+        <NavbarItem
+          content='Articles'
+          onClick={handleMenu}
+          href='/articles'
           target='_self'
         />
       </NavbarMenu>
