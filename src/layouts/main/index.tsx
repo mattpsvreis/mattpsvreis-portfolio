@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 
 import { Footer } from '@/components/base/footer';
 import { Navbar } from '@/components/base/navbar';
@@ -9,26 +9,47 @@ interface MainProps {
 }
 
 export const Main: FC<MainProps> = ({ children }) => {
+  const componentRef = useRef<HTMLElement>(null);
+
+  const [screenSize, setScreenSize] = useState<number>();
+
+  function getScreenSize() {
+    if (componentRef.current) {
+      setScreenSize(componentRef.current.clientHeight);
+    }
+  }
+
+  useEffect(() => {
+    getScreenSize();
+
+    window.addEventListener('resize', getScreenSize);
+
+    return () => window.removeEventListener('resize', getScreenSize);
+  }, []);
+
   return (
     <main
+      ref={componentRef}
       id='main'
-      className='bg-main flex min-h-screen w-full flex-col font-mono text-indigo-400 text-glow'
+      className='bg-main flex min-h-screen w-full flex-col font-mono text-base text-indigo-100 text-glow'
     >
       <div
-        id='glass-pane-background'
-        className='absolute left-0 top-0 h-full w-full bg-cover bg-no-repeat'
+        id='scanlines-background'
+        className={`absolute left-0 top-0 w-full bg-cover`}
         style={{
           backgroundImage: `url(${scanlines})`,
-          opacity: 0.07,
+          opacity: 0.1,
           filter: 'invert(1)',
+          height: screenSize ? `${screenSize}px` : '100%',
         }}
       />
       <div
         id='color-overlay'
-        className='absolute left-0 top-0 h-full w-full'
+        className='absolute left-0 top-0 w-full'
         style={{
           backgroundColor: '#d9d9ff',
           mixBlendMode: 'multiply',
+          height: screenSize ? `${screenSize}px` : '100%',
         }}
       />
       <div className='relative z-10'>
