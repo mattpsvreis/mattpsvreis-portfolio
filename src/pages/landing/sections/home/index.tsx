@@ -35,13 +35,14 @@ export const Home: FC = () => {
                   <b>Mateus Reis</b>, {age} yo, RJ - Brazil
                 </p>
                 <p>
-                  Fullstack Web Developer, AI Enthusiast, and Technical
+                  Fullstack Software Engineer, AI Enthusiast, and Technical
                   Trailblazer
                 </p>
               </div>
               <p>
-                {'> currently working as a Frontend Developer @ '}
-                <b>{'Atomos Oficial'}</b>
+                {'> currently working as a Mid-Level Software Engineer @ '}
+                <b>{'PagBank '}</b>
+                <i>{'(via Invillia)'}</i>
               </p>
               <a
                 href='https://open.spotify.com/user/2233hoxe7q3q2oxj472qllrba?si=4b0716d193f74067'
@@ -57,7 +58,7 @@ export const Home: FC = () => {
               <p>
                 <b>tech stack :</b>{' '}
                 <i>
-                  React, Next, TypeScript, Node, TailwindCSS, PostgreSQL,
+                  React, Next, TypeScript, Node, Nest, TailwindCSS, PostgreSQL,
                   Docker, Apache Kafka, OpenAI, AWS
                 </i>
               </p>
