@@ -31,7 +31,7 @@ export const Main: FC<MainProps> = ({ children }) => {
     <main
       ref={componentRef}
       id='main'
-      className='bg-main flex min-h-screen w-full flex-col font-mono text-base text-indigo-100 text-glow'
+      className='bg-main flex min-h-screen w-full flex-col font-mono text-base text-indigo-100'
     >
       <div
         id='scanlines-background'
