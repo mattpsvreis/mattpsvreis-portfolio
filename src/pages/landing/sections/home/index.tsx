@@ -53,12 +53,10 @@ export const Home: FC = () => {
               </p>
               <p>
                 {'>'} Three years of professional experience developing varied
-                and complex production-ready applications such as a web mobile
-                gaming app, an intranet app for monitoring integrations with
-                solutions to either manually or automatically resolving payload
-                errors, administrative panels, dashboards and graphs, forums and
-                wikis frameworks, Discord bots, gaming mods, shell scripts, and
-                various types of e-commerces.'
+                and complex production-ready applications ranging from gaming
+                apps, intranet apps, integration monitors, administrative
+                panels, dashboards and graphs, forums and wikis frameworks,
+                Discord bots, gaming mods, shell scripts, and e-commerces.
               </p>
               <a
                 href='https://open.spotify.com/user/2233hoxe7q3q2oxj472qllrba?si=4b0716d193f74067'
