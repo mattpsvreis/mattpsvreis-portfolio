@@ -9,7 +9,7 @@ export const Footer: FC = () => {
       className='bottom-0 flex w-full flex-row items-center justify-between px-8 pt-8 text-sm text-indigo-400 xl:fixed xl:items-end xl:pt-0'
     >
       <h1 id='copyright-text' className='xl:pb-8'>
-        Made by @mattpsvreis | 2024 ©
+        Made by @mattpsvreis | {new Date().getFullYear()} ©
       </h1>
       <img
         src={pirateflag}

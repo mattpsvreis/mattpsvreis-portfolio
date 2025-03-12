@@ -163,7 +163,8 @@ export const Home: FC = () => {
               <p>
                 <b>curiosities : </b>{' '}
                 <i>
-                  I've been a Counter-Strike Pro Player before; I'm a musicist;
+                  I've been a Counter-Strike Pro Player before; I'm a musicist
+                  who can play the guitar, the piano, the violin, and much more;
                   been using tech gadgets since I was 6; been programming since
                   I was 12
                 </i>
