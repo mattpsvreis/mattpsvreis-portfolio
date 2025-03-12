@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 
+import MusicPlayer from '@/components/data-input/music-player';
 import favicon from '@assets/svgs/favicon.svg';
 import clsx from 'clsx';
 import {
@@ -39,6 +40,7 @@ export const Navbar: FC = () => {
           target='_self'
         />
       </div>
+      <MusicPlayer />
       <div
         id='navbar-right'
         className='hidden h-full w-1/2 items-center justify-end gap-8 sm:flex'
