@@ -55,9 +55,16 @@ export const Piracy: FC = () => {
             malicious act, but a lifeline to art, culture, and education they
             would otherwise be denied. To argue that these people are "stealing"
             is to ignore the reality that their access does not equate to a lost
-            profit. If the option is piracy or nothing, the producer has lost no
-            more from piracy than they would have lost from total
-            inaccessibility.
+            profit.
+          </p>
+          <p className='mt-4 text-red-500'>
+            <b>
+              <i>
+                If the option is piracy or nothing, the producer has lost no
+                more from piracy than they would have lost from total
+                inaccessibility.
+              </i>
+            </b>
           </p>
           <h2 className='mt-4 text-2xl font-bold text-indigo-200'>
             3. The Vanishing Past: Preservation Through Piracy
