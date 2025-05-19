@@ -35,7 +35,7 @@ export const Main: FC<MainProps> = ({ children }) => {
     >
       <div
         id='scanlines-background'
-        className={`absolute left-0 top-0 w-full bg-cover`}
+        className={`absolute left-0 top-0 h-full w-full bg-cover`}
         style={{
           backgroundImage: `url(${scanlines})`,
           opacity: 0.1,

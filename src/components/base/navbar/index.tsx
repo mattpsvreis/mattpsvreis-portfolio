@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
 import MusicPlayer from '@/components/data-input/music-player';
 import favicon from '@assets/svgs/favicon.svg';
@@ -17,17 +17,31 @@ import { NavbarMenu } from './components/menu';
 
 export const Navbar: FC = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const [scrollY, setScrollY] = useState<number>(0);
 
   function handleMenu() {
     setMenuOpen(!menuOpen);
   }
 
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setScrollY(window.scrollY);
+    });
+
+    return () => {
+      window.removeEventListener('scroll', () => {
+        setScrollY(window.scrollY);
+      });
+    };
+  }, []);
+
   return (
     <nav
       id='navbar'
       className={clsx(
-        'fixed flex h-20 w-full flex-row items-center justify-between px-8 md:h-24 md:px-[420px]',
-        { 'bg-black/95': menuOpen }
+        'fixed flex h-20 w-full flex-row items-center justify-between px-8 transition-colors duration-300 ease-in-out md:h-24 md:px-[420px]',
+        { 'bg-black/95': menuOpen },
+        { 'bg-black/95': scrollY > 0 }
       )}
     >
       <div
