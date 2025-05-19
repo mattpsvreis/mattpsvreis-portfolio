@@ -1,5 +1,5 @@
 
-yarn build ||
+pnpm build ||
 (
     echo "\n ❌ - Build Failed. - ❌\n View the errors above in order to fix them!\n"
     false;

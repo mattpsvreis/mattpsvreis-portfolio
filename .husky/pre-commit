@@ -1,7 +1,7 @@
 
-yarn ||
+pnpm install ||
 (
-  echo "\n ❌ - yarn Failed. - Failure in updating dependencies. - ❌\n View the errors above in order to fix them!\n"
+  echo "\n ❌ - pnpm Failed. - Failure in updating dependencies. - ❌\n View the errors above in order to fix them!\n"
 )
 
 (
@@ -9,9 +9,9 @@ yarn ||
   true;
 ) &&
 
-yarn lint ||
+pnpm lint ||
 (
-  echo "\n ❌ - yarn lint Failed. - ❌\n View the errors above in order to fix them!\n"
+  echo "\n ❌ - pnpm lint Failed. - ❌\n View the errors above in order to fix them!\n"
   false;
 )
 
@@ -20,9 +20,9 @@ yarn lint ||
   true;
 ) &&
 
-yarn format:staged ||
+pnpm format:staged ||
 (
-  echo "\n ❌ - yarn format:staged Failed. - ❌\n View the errors above in order to fix them!\n"
+  echo "\n ❌ - pnpm format:staged Failed. - ❌\n View the errors above in order to fix them!\n"
   false;
 )
 
