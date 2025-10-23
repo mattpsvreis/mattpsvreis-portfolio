@@ -27,7 +27,7 @@ function formatDate(date: Date) {
 const ArticleLink = ({ href, title, dateCreated }: ArticleLinkProps) => {
   return (
     <Link to={href}>
-      <h1 className='text-5xl text-indigo-500'>{title}</h1>
+      <h1 className='text-5xl text-indigo-500 hover:text-glow'>{title}</h1>
       <p>Posted on {formatDate(dateCreated)}</p>
     </Link>
   );

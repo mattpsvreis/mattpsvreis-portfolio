@@ -53,7 +53,7 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         '.text-glow': {
-          'text-shadow': '0 0 10px #959de6',
+          'text-shadow': '0 0 10px #959de6, 0 1px 0 #959de6',
         },
         '.text-underglow': {
           'text-shadow': '0 1px 0 #959de6',

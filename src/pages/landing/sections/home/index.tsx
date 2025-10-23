@@ -38,13 +38,11 @@ export const Home: FC = () => {
           <div className='flex w-full flex-col items-start justify-start gap-6 xl:flex-row 4xl:flex-col'>
             <img src={pp} alt='' className='h-64 4xl:self-center' />
             <div className='flex flex-col items-start justify-start gap-2'>
-              <p className='text-4xl'>
-                mattpsvreis <span className='text-glow'>🏴‍☠️</span>
-              </p>
+              <p className='text-4xl text-glow'>mattpsvreis 🏴‍☠️</p>
               <div>
                 <p>
-                  <span className='font-medium'>Mateus Reis</span>, {age} yo, RJ
-                  - Brazil
+                  <span className='font-medium text-glow'>Mateus Reis</span>,{' '}
+                  {age} yo, RJ - Brazil
                 </p>
                 <p>
                   <ToolTip anchorSelect='#fullstack-anchor' placement='top'>
@@ -58,13 +56,13 @@ export const Home: FC = () => {
                 </p>
               </div>
               <p>
-                <span className='text-indigo-500'>{'>'}</span> currently working
-                as a Mid-Level Software Engineer @
+                <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
+                currently working as a Mid-Level Software Engineer @
                 <span className='font-medium'>{'PagBank '}</span>
                 <span className='text-lg italic'>{'(via Invillia)'}</span>
               </p>
               <p>
-                <span className='text-indigo-500'>{'>'}</span>{' '}
+                <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
                 {getYearsOfExperience()} years of experience developing complex
                 and varied applications, from intranet systems to end user
                 facing systems with focus on customer and user experience.
@@ -74,7 +72,7 @@ export const Home: FC = () => {
                 target='_blank'
                 className='text-lg underline'
               >
-                <span className='text-2xl font-medium italic'>
+                <span className='text-2xl font-medium italic text-glow'>
                   🪄 some music I listen to 🎶
                 </span>
               </a>
@@ -83,7 +81,7 @@ export const Home: FC = () => {
           <div className='flex flex-col items-start justify-start gap-6'>
             <div className='flex flex-col items-start justify-start gap-2'>
               <p>
-                <span className='font-medium text-indigo-500'>
+                <span className='font-medium text-indigo-500 text-glow'>
                   main tech stack :
                 </span>{' '}
                 <i>
@@ -170,14 +168,16 @@ export const Home: FC = () => {
                 </i>
               </p>
               <p>
-                <span className='font-medium text-indigo-500'>hobbies : </span>{' '}
+                <span className='font-medium text-indigo-500 text-glow'>
+                  hobbies :{' '}
+                </span>{' '}
                 <i>
                   board games, gaming, drifting, anime, travelling, music,
                   sci-fi shows/movies, comedy shows/movies, writing
                 </i>
               </p>
               <p>
-                <span className='font-medium text-indigo-500'>
+                <span className='font-medium text-indigo-500 text-glow'>
                   curiosities :{' '}
                 </span>{' '}
                 <i>
@@ -194,7 +194,7 @@ export const Home: FC = () => {
               </p>
               <ul className='flex list-disc flex-col gap-2'>
                 <li className='ml-8'>
-                  <span className='font-medium text-indigo-500'>
+                  <span className='font-medium text-indigo-500 text-glow'>
                     take a look at :{' '}
                   </span>
                 </li>
