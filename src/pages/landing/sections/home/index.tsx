@@ -38,7 +38,9 @@ export const Home: FC = () => {
           <div className='flex w-full flex-col items-start justify-start gap-6 xl:flex-row 4xl:flex-col'>
             <img src={pp} alt='' className='h-64 4xl:self-center' />
             <div className='flex flex-col items-start justify-start gap-2'>
-              <p className='text-4xl text-glow'>mattpsvreis 🏴‍☠️</p>
+              <p className='text-4xl text-indigo-500 text-glow'>
+                mattpsvreis 🏴‍☠️
+              </p>
               <div>
                 <p>
                   <span className='font-medium text-glow'>Mateus Reis</span>,{' '}
