@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Epilogue&family=Montserrat&family=Nunito&family=Poppins&family=Roboto&family=Tektur&display=swap');
 
+@font-face {
+  font-family: 'Monaco';
+  src: url('./assets/fonts/monaco.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +36,10 @@ html {
 }
 .font-poppins {
   font-family: 'Poppins', 'sans-serif';
+}
+
+.font-monaco {
+  font-family: 'Monaco', 'sans-serif';
 }
 
 .bg-main {

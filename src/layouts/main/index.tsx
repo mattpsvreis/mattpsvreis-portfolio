@@ -31,7 +31,7 @@ export const Main: FC<MainProps> = ({ children }) => {
     <main
       ref={componentRef}
       id='main'
-      className='bg-main flex min-h-screen w-full flex-col font-[monaco] text-[21px] tracking-wide text-white'
+      className='bg-main font-monaco flex min-h-screen w-full flex-col text-[22px] font-thin tracking-wide text-white'
     >
       <div
         id='scanlines-background'
@@ -56,7 +56,7 @@ export const Main: FC<MainProps> = ({ children }) => {
         <Navbar />
         <section
           id='content'
-          className='min-h-full w-full [text-shadow:0_1px_0_#959de6]'
+          className='min-h-full w-full [text-shadow:0_1px_0_#959de6] [&>p]:render-pixelated'
         >
           {children}
         </section>

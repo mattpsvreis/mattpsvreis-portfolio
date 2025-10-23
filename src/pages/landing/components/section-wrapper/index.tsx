@@ -19,7 +19,7 @@ export const SectionWrapper: FC<SectionWrapperProps> = ({
       className={clsx(
         'min-h-screen px-8 sm:px-16',
         {
-          'pb-4 pt-24 sm:pb-12 sm:pt-28': section !== 'middle',
+          'pb-4 pt-24 sm:pb-12 sm:pt-[94px]': section !== 'middle',
         },
         className
       )}

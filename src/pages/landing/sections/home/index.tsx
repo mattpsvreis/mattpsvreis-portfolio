@@ -30,16 +30,17 @@ export const Home: FC = () => {
           <div className='flex w-full flex-col items-start justify-start gap-6 xl:flex-row 4xl:flex-col'>
             <img src={pp} alt='' className='h-64 4xl:self-center' />
             <div className='flex flex-col items-start justify-start gap-2'>
-              <p className='text-3xl'>
+              <p className='text-4xl'>
                 mattpsvreis <span className='text-glow'>🏴‍☠️</span>
               </p>
               <div>
                 <p>
-                  <b>Mateus Reis</b>, {age} yo, RJ - Brazil
+                  <span className='font-medium'>Mateus Reis</span>, {age} yo, RJ
+                  - Brazil
                 </p>
                 <p>
                   <ToolTip anchorSelect='#fullstack-anchor' placement='top'>
-                    <p className='italic text-indigo-100 text-glow'>
+                    <p className='italic'>
                       Frontend, Backend, DevSecOps, Databases, Infrastructure,
                       and Scripting.
                     </p>
@@ -50,8 +51,8 @@ export const Home: FC = () => {
               </div>
               <p>
                 {'> currently working as a Mid-Level Software Engineer @ '}
-                <b className='text-glow'>{'PagBank '}</b>
-                <i>{'(via Invillia)'}</i>
+                <span className='font-medium'>{'PagBank '}</span>
+                <span className='text-lg italic'>{'(via Invillia)'}</span>
               </p>
               <p>
                 {'>'} Three years of professional experience developing varied
@@ -65,19 +66,21 @@ export const Home: FC = () => {
                 target='_blank'
                 className='text-lg underline'
               >
-                <i className='text-2xl font-medium'>
+                <span className='text-2xl font-medium italic'>
                   🪄 some music I listen to 🎶
-                </i>
+                </span>
               </a>
             </div>
           </div>
           <div className='flex flex-col items-start justify-start gap-6'>
             <div className='flex flex-col items-start justify-start gap-2'>
               <p>
-                <b>main tech stack :</b>{' '}
+                <span className='font-medium text-indigo-500'>
+                  main tech stack :
+                </span>{' '}
                 <i>
                   <ToolTip anchorSelect='#react-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       A JavaScript framework for responsive and interactive web
                       development.
                     </p>
@@ -87,7 +90,7 @@ export const Home: FC = () => {
                   </span>
                   ,{' '}
                   <ToolTip anchorSelect='#typescript-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       A JavaScript superset meant to add Developer Experience
                       focused functionalities such as Static Typing.
                     </p>
@@ -100,7 +103,7 @@ export const Home: FC = () => {
                   </span>
                   ,{' '}
                   <ToolTip anchorSelect='#node-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       A JavaScript framework for server-side development,
                       providing the necessary tools to create lightweight and
                       simple APIs.
@@ -111,46 +114,46 @@ export const Home: FC = () => {
                   </span>
                   ,{' '}
                   <ToolTip anchorSelect='#next-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       A React framework for server-side rendering and integrated
                       backend-for-frontend development.
                     </p>
                   </ToolTip>
                   <span id='next-anchor'>Next</span>,{' '}
                   <ToolTip anchorSelect='#postgres-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       A robust SQL based relational database.
                     </p>
                   </ToolTip>
                   <span id='postgres-anchor'>PostgreSQL</span>,{' '}
                   <ToolTip anchorSelect='#docker-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       The solution to build, share, run, and verify apps with
                       pre-built environment configuration.
                     </p>
                   </ToolTip>
                   <span id='docker-anchor'>Docker</span>,{' '}
                   <ToolTip anchorSelect='#kafka-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       A robust and feature rich messenger queue solution.
                     </p>
                   </ToolTip>
                   <span id='kafka-anchor'>Apache Kafka</span>,{' '}
                   <ToolTip anchorSelect='#openai-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       The top hotspot for any open-source AI related products.
                     </p>
                   </ToolTip>
                   <span id='openai-anchor'>OpenAI</span>,{' '}
                   <ToolTip anchorSelect='#aws-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       A cloud service offering a wide range of services for
                       computing, storage, and more.
                     </p>
                   </ToolTip>
                   <span id='aws-anchor'>AWS</span>,{' '}
                   <ToolTip anchorSelect='#lua-anchor' placement='top'>
-                    <p className='text-indigo-100 text-glow'>
+                    <p className='text-glow'>
                       The all-rounder scripting language for every game modding
                       necessity.
                     </p>
@@ -159,14 +162,16 @@ export const Home: FC = () => {
                 </i>
               </p>
               <p>
-                <b>hobbies : </b>{' '}
+                <span className='font-medium text-indigo-500'>hobbies : </span>{' '}
                 <i>
                   board games, gaming, drifting, anime, travelling, music,
                   sci-fi shows/movies, comedy shows/movies, writing
                 </i>
               </p>
               <p>
-                <b>curiosities : </b>{' '}
+                <span className='font-medium text-indigo-500'>
+                  curiosities :{' '}
+                </span>{' '}
                 <i>
                   I've been a Counter-Strike Pro Player before; I'm a musicist
                   who can play the guitar, the piano, the violin, and much more;
@@ -180,8 +185,10 @@ export const Home: FC = () => {
                 <i>↓ will update soon</i>
               </p>
               <ul className='flex list-disc flex-col gap-2'>
-                <li className='ml-8 text-glow'>
-                  <b>take a look at : </b>
+                <li className='ml-8'>
+                  <span className='font-medium text-indigo-500'>
+                    take a look at :{' '}
+                  </span>
                 </li>
                 <ul className='z-20 flex list-disc flex-col gap-2'>
                   <li className='ml-16 list-circle'>

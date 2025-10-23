@@ -53,10 +53,19 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         '.text-glow': {
-          'text-shadow': '0 0 10px rgba(255, 255, 255, 0.6)',
+          'text-shadow': '0 0 10px #959de6',
+        },
+        '.text-underglow': {
+          'text-shadow': '0 1px 0 #959de6',
+        },
+        '.icon-glow': {
+          filter: 'drop-shadow(0 0 6px #959de6)',
         },
         '.list-circle': {
           'list-style-type': 'circle',
+        },
+        '.render-pixelated': {
+          'image-rendering': 'pixelated',
         },
       });
     },
