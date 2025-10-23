@@ -20,6 +20,14 @@ export const Home: FC = () => {
     }
   }
 
+  function getYearsOfExperience() {
+    const startDate = new Date('2021-01-01');
+    const currentDate = new Date();
+    const diffInMs = currentDate.getTime() - startDate.getTime();
+    const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365);
+    return Math.floor(diffInYears);
+  }
+
   return (
     <Fragment>
       <SectionWrapper
@@ -50,16 +58,16 @@ export const Home: FC = () => {
                 </p>
               </div>
               <p>
-                {'> currently working as a Mid-Level Software Engineer @ '}
+                <span className='text-indigo-500'>{'>'}</span> currently working
+                as a Mid-Level Software Engineer @
                 <span className='font-medium'>{'PagBank '}</span>
                 <span className='text-lg italic'>{'(via Invillia)'}</span>
               </p>
               <p>
-                {'>'} Three years of professional experience developing varied
-                and complex production-ready applications ranging from gaming
-                apps, intranet apps, integration monitors, administrative
-                panels, dashboards and graphs, forums and wikis frameworks,
-                Discord bots, gaming mods, shell scripts, and e-commerces.
+                <span className='text-indigo-500'>{'>'}</span>{' '}
+                {getYearsOfExperience()} years of experience developing complex
+                and varied applications, from intranet systems to end user
+                facing systems with focus on customer and user experience.
               </p>
               <a
                 href='https://open.spotify.com/user/2233hoxe7q3q2oxj472qllrba?si=4b0716d193f74067'
