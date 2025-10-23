@@ -56,7 +56,7 @@ export const Main: FC<MainProps> = ({ children }) => {
         <Navbar />
         <section
           id='content'
-          className='min-h-full w-full [text-shadow:0_1px_0_#959de6] [&>p]:render-pixelated'
+          className='text-underglow [&>p]:render-pixelated min-h-full w-full'
         >
           {children}
         </section>

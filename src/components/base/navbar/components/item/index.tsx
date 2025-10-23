@@ -20,7 +20,7 @@ export const NavbarItem: FC<NavbarItemProps> = ({
   return (
     <div
       id='navbar-item'
-      className='text-2xl transition-all hover:scale-110 hover:icon-glow'
+      className='hover:icon-glow text-2xl transition-all hover:scale-110'
     >
       <Link to={href} target={target}>
         <button onClick={onClick}>{content}</button>
