@@ -185,30 +185,22 @@ export const Home: FC = () => {
                 </li>
                 <ul className='z-20 flex list-disc flex-col gap-2'>
                   <li className='ml-16 list-circle'>
-                    <Link
-                      to='/experience'
-                      target='_blank'
-                      className='underline'
-                    >
+                    <Link to='/experience' className='underline'>
                       {'my work experience... >'}
                     </Link>
                   </li>
                   <li className='ml-16 list-circle'>
-                    <Link to='/projects' target='_blank' className='underline'>
+                    <Link to='/projects' className='underline'>
                       {'my personal projects... >'}
                     </Link>
                   </li>
                   <li className='ml-16 list-circle'>
-                    <Link to='/articles' target='_blank' className='underline'>
+                    <Link to='/articles' className='underline'>
                       {'my articles... >'}
                     </Link>
                   </li>
                   <li className='ml-16 list-circle'>
-                    <Link
-                      to='/articles/whoami'
-                      target='_blank'
-                      className='underline'
-                    >
+                    <Link to='/articles/whoami' className='underline'>
                       {'my story on how I became a programmer... >'}
                     </Link>
                   </li>
