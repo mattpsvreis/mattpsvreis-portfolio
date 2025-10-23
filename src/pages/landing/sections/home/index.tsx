@@ -21,7 +21,7 @@ export const Home: FC = () => {
   }
 
   function getYearsOfExperience() {
-    const startDate = new Date('2016-01-01');
+    const startDate = new Date('2021-01-01');
     const currentDate = new Date();
     const diffInMs = currentDate.getTime() - startDate.getTime();
     const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365);
@@ -59,7 +59,7 @@ export const Home: FC = () => {
               </div>
               <p>
                 <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
-                currently working as a Senior Software Engineer
+                currently working as a Software Engineer
               </p>
               <p>
                 <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
