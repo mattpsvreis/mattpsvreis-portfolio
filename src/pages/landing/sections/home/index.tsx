@@ -21,7 +21,7 @@ export const Home: FC = () => {
   }
 
   function getYearsOfExperience() {
-    const startDate = new Date('2021-01-01');
+    const startDate = new Date('2016-01-01');
     const currentDate = new Date();
     const diffInMs = currentDate.getTime() - startDate.getTime();
     const diffInYears = diffInMs / (1000 * 60 * 60 * 24 * 365);
@@ -59,9 +59,7 @@ export const Home: FC = () => {
               </div>
               <p>
                 <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
-                currently working as a Mid-Level Software Engineer @
-                <span className='font-semibold text-glow'>{' PagBank '}</span>
-                <span className='text-lg italic'>{'(via Invillia)'}</span>
+                currently working as a Senior Software Engineer
               </p>
               <p>
                 <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
@@ -186,7 +184,7 @@ export const Home: FC = () => {
                   I've been a Counter-Strike Pro Player before; I'm a musicist
                   who can play the guitar, the piano, the violin, and much more;
                   been using tech gadgets since I was 6; been programming since
-                  I was 12
+                  I was 16
                 </i>
               </p>
             </div>
