@@ -1,5 +1,7 @@
 import { FC } from 'react';
 
+import { Link } from 'react-router-dom';
+
 type Icon = React.ReactNode;
 
 interface NavbarItemProps {
@@ -17,9 +19,9 @@ export const NavbarItem: FC<NavbarItemProps> = ({
 }) => {
   return (
     <div id='navbar-item' className='text-2xl transition-all hover:scale-110'>
-      <a href={href} target={target}>
+      <Link to={href} target={target}>
         <button onClick={onClick}>{content}</button>
-      </a>
+      </Link>
     </div>
   );
 };

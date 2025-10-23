@@ -40,7 +40,7 @@ const MusicPlayer = () => {
           className='peer hidden'
           onClick={() => playSong()}
         />
-        <span className='text-shadow-button text-[15px] font-extrabold uppercase leading-[12px] text-black transition-all duration-100 peer-checked:text-blue-200 peer-checked:text-glow'>
+        <span className='text-shadow-button text-[20px] font-medium uppercase leading-[12px] text-white/70 transition-all duration-100 peer-checked:text-blue-200 peer-checked:text-glow'>
           Play
         </span>
       </label>
@@ -54,7 +54,7 @@ const MusicPlayer = () => {
           className='peer hidden'
           onClick={() => pauseSong()}
         />
-        <span className='text-shadow-button text-[15px] font-extrabold uppercase leading-[12px] text-black transition-all duration-100 peer-checked:text-blue-200 peer-checked:text-glow'>
+        <span className='text-shadow-button text-[20px] font-medium uppercase leading-[12px] text-white/70 transition-all duration-100 peer-checked:text-blue-200 peer-checked:text-glow'>
           Pause
         </span>
       </label>
@@ -68,7 +68,7 @@ const MusicPlayer = () => {
           className='peer hidden'
           onClick={() => resetSong()}
         />
-        <span className='text-shadow-button text-[15px] font-extrabold uppercase leading-[12px] text-black transition-all duration-100 peer-checked:text-blue-200 peer-checked:text-glow'>
+        <span className='text-shadow-button text-[20px] font-medium uppercase leading-[12px] text-white/70 transition-all duration-100 peer-checked:text-blue-200 peer-checked:text-glow'>
           Reset
         </span>
       </label>

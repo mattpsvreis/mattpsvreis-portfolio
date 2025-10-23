@@ -8,12 +8,12 @@ export const Piracy: FC = () => {
       <Fragment>
         <SectionWrapper
           section='top'
-          className='flex max-w-6xl flex-col items-start justify-start text-white text-glow'
+          className='text-wider flex max-w-6xl flex-col items-start justify-start'
         >
-          <h1 className='w-full text-center text-3xl font-bold text-indigo-200'>
+          <h1 className='w-full text-center text-4xl font-medium text-indigo-200'>
             In Defense of Piracy: Why Access Should Outweigh Ownership
           </h1>
-          <p className='mt-4 indent-4'>
+          <p className='mt-4 indent-4 text-2xl'>
             Piracy is a contentious issue, often framed as a clear-cut case of
             theft versus rightful ownership. Yet, as with many matters in the
             digital age, reality is more nuanced. While it's true that creating
@@ -24,10 +24,10 @@ export const Piracy: FC = () => {
             not as a moral failing, but as a symptom of a broken system, and,
             for many, an act of necessity or resistance.
           </p>
-          <h2 className='mt-4 text-2xl font-bold text-indigo-200'>
+          <h2 className='mt-4 text-3xl font-medium text-indigo-200'>
             1. Digital Goods Are Not Physical Goods
           </h2>
-          <p className='mt-4 indent-4'>
+          <p className='mt-4 indent-4 text-2xl'>
             At the heart of the piracy debate is a fundamental misunderstanding:
             digital goods are not physical goods. When someone shoplifts a book
             from a store, the store loses a copy and incurs a financial loss.
@@ -35,7 +35,7 @@ export const Piracy: FC = () => {
             missing from the shelf. The producer is not deprived of an object.
             They are, at most, deprived of a potential sale.
           </p>
-          <p className='mt-4 text-red-500'>
+          <p className='mt-4 text-red-500 text-glow'>
             <b>
               <i>
                 But what if the person pirating the book never had the means or
@@ -43,10 +43,10 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-2xl font-bold text-indigo-200'>
+          <h2 className='mt-4 text-3xl font-medium text-indigo-200'>
             2. Poverty and the Myth of the Lost Sale
           </h2>
-          <p className='mt-4 indent-4'>
+          <p className='mt-4 indent-4 text-2xl'>
             A large segment of pirates are not choosing piracy over purchase,
             they are choosing piracy over nothing. In many parts of the world,
             even a modest subscription to Netflix or a single game purchase is
@@ -57,7 +57,7 @@ export const Piracy: FC = () => {
             is to ignore the reality that their access does not equate to a lost
             profit.
           </p>
-          <p className='mt-4 text-red-500'>
+          <p className='mt-4 text-red-500 text-glow'>
             <b>
               <i>
                 If the option is piracy or nothing, the producer has lost no
@@ -66,10 +66,10 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-2xl font-bold text-indigo-200'>
+          <h2 className='mt-4 text-3xl font-medium text-indigo-200'>
             3. The Vanishing Past: Preservation Through Piracy
           </h2>
-          <p className='mt-4 indent-4'>
+          <p className='mt-4 indent-4 text-2xl'>
             Art and media are not always eternally available. Licensing issues,
             legal disputes, or simple corporate neglect often lead to media
             being taken off shelves and streaming platforms, locked away in
@@ -80,7 +80,7 @@ export const Piracy: FC = () => {
             payment, they’re archivists, cultural historians, and nostalgic fans
             trying to keep art alive.
           </p>
-          <p className='mt-4 text-red-500'>
+          <p className='mt-4 text-red-500 text-glow'>
             <b>
               <i>
                 Without piracy, countless pieces of media would simply cease to
@@ -88,10 +88,10 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-2xl font-bold text-indigo-200'>
+          <h2 className='mt-4 text-3xl font-medium text-indigo-200'>
             4. Access Over Profit: The Frustration of Legal Consumption
           </h2>
-          <p className='mt-4 indent-4'>
+          <p className='mt-4 indent-4 text-2xl'>
             Then there are the users who can afford to pay, but find the legal
             options so convoluted or exploitative that piracy becomes the more
             rational choice. In today’s fragmented streaming economy, watching a
@@ -101,7 +101,7 @@ export const Piracy: FC = () => {
             user experiences, and you get a marketplace that feels like
             punishment, not convenience.
           </p>
-          <p className='mt-4 text-red-500'>
+          <p className='mt-4 text-red-500 text-glow'>
             <b>
               <i>
                 Ironically, piracy often offers a better user experience: one
@@ -110,10 +110,10 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-2xl font-bold text-indigo-200'>
+          <h2 className='mt-4 text-3xl font-medium text-indigo-200'>
             5. Not Theft, But a Message
           </h2>
-          <p className='mt-4 indent-4'>
+          <p className='mt-4 indent-4 text-2xl'>
             Ultimately, piracy is not a monolith. It’s not always right, and
             it's not always justifiable. But it is a response, a message to the
             industry that accessibility, pricing, preservation, and customer
@@ -121,22 +121,22 @@ export const Piracy: FC = () => {
             can, they’re doing so because the system built to sell media is
             often inaccessible, incomplete, or inhospitable.
           </p>
-          <p className='mt-4 indent-4'>
+          <p className='mt-4 indent-4 text-2xl'>
             Rather than trying to stamp out piracy with lawsuits and moral
             outrage, perhaps media creators and distributors should ask
             themselves:{' '}
-            <b className='text-red-500'>
+            <b className='text-red-500 text-glow'>
               <i>
                 Why are people pirating in the first place? And what can be done
                 to offer a better alternative?{' '}
               </i>
             </b>
             Until that happens,{' '}
-            <b className='text-red-500'>
+            <b className='text-red-500 text-glow'>
               <i>piracy will remain</i>
             </b>{' '}
             -- not as a crime of greed, but as a{' '}
-            <b className='text-red-500'>
+            <b className='text-red-500 text-glow'>
               <i>symptom of unmet needs</i>
             </b>{' '}
             in a digital world.

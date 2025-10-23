@@ -31,11 +31,11 @@ export const Main: FC<MainProps> = ({ children }) => {
     <main
       ref={componentRef}
       id='main'
-      className='bg-main flex min-h-screen w-full flex-col font-mono text-base text-indigo-100'
+      className='bg-main flex min-h-screen w-full flex-col font-[monaco] text-[21px] tracking-wide text-white'
     >
       <div
         id='scanlines-background'
-        className={`absolute left-0 top-0 h-full w-full bg-cover`}
+        className={`fixed left-0 top-0 h-full w-full bg-cover`}
         style={{
           backgroundImage: `url(${scanlines})`,
           opacity: 0.1,
@@ -45,16 +45,19 @@ export const Main: FC<MainProps> = ({ children }) => {
       />
       <div
         id='color-overlay'
-        className='absolute left-0 top-0 w-full'
+        className='fixed left-0 top-0 w-full'
         style={{
-          backgroundColor: '#d9d9ff',
+          backgroundColor: '#989bbd',
           mixBlendMode: 'multiply',
           height: screenSize ? `${screenSize}px` : '100%',
         }}
       />
       <div className='relative z-10'>
         <Navbar />
-        <section id='content' className='min-h-full w-full'>
+        <section
+          id='content'
+          className='min-h-full w-full [text-shadow:0_1px_0_#959de6]'
+        >
           {children}
         </section>
         <Footer />

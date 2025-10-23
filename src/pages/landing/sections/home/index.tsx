@@ -13,7 +13,7 @@ export const Home: FC = () => {
   const age: number = getAge();
 
   function getAge() {
-    if (new Date().getMonth() < new Date(2000, 10, 8).getMonth()) {
+    if (new Date().getMonth() < new Date(2000, 9, 8).getMonth()) {
       return new Date().getFullYear() - 2000 - 1;
     } else {
       return new Date().getFullYear() - 2000;
@@ -29,10 +29,12 @@ export const Home: FC = () => {
         <div className='flex w-full flex-col items-start justify-start gap-6'>
           <div className='flex w-full flex-col items-start justify-start gap-6 xl:flex-row 4xl:flex-col'>
             <img src={pp} alt='' className='h-64 4xl:self-center' />
-            <div className='flex flex-col items-start justify-start gap-4'>
-              <p className='text-2xl text-glow'>mattpsvreis 🏴‍☠️</p>
+            <div className='flex flex-col items-start justify-start gap-2'>
+              <p className='text-3xl'>
+                mattpsvreis <span className='text-glow'>🏴‍☠️</span>
+              </p>
               <div>
-                <p className='text-glow'>
+                <p>
                   <b>Mateus Reis</b>, {age} yo, RJ - Brazil
                 </p>
                 <p>
@@ -63,14 +65,14 @@ export const Home: FC = () => {
                 target='_blank'
                 className='text-lg underline'
               >
-                <i className='font-bold text-glow'>
+                <i className='text-2xl font-medium'>
                   🪄 some music I listen to 🎶
                 </i>
               </a>
             </div>
           </div>
           <div className='flex flex-col items-start justify-start gap-6'>
-            <div className='flex flex-col items-start justify-start gap-4'>
+            <div className='flex flex-col items-start justify-start gap-2'>
               <p>
                 <b>main tech stack :</b>{' '}
                 <i>
@@ -80,7 +82,7 @@ export const Home: FC = () => {
                       development.
                     </p>
                   </ToolTip>
-                  <span className='font-bold text-glow' id='react-anchor'>
+                  <span className='font-medium text-glow' id='react-anchor'>
                     React
                   </span>
                   ,{' '}
@@ -90,7 +92,10 @@ export const Home: FC = () => {
                       focused functionalities such as Static Typing.
                     </p>
                   </ToolTip>
-                  <span className='font-bold text-glow' id='typescript-anchor'>
+                  <span
+                    className='font-medium text-glow'
+                    id='typescript-anchor'
+                  >
                     TypeScript
                   </span>
                   ,{' '}
@@ -101,7 +106,7 @@ export const Home: FC = () => {
                       simple APIs.
                     </p>
                   </ToolTip>
-                  <span className='font-bold text-glow' id='node-anchor'>
+                  <span className='font-medium text-glow' id='node-anchor'>
                     Node
                   </span>
                   ,{' '}
@@ -170,7 +175,7 @@ export const Home: FC = () => {
                 </i>
               </p>
             </div>
-            <div className='flex flex-col items-start justify-start gap-4'>
+            <div className='flex flex-col items-start justify-start gap-2'>
               <p>
                 <i>↓ will update soon</i>
               </p>

@@ -12,11 +12,11 @@ export const NavbarMenu: FC<NavbarMenuProps> = ({ menuOpen, children }) => {
     <div
       id='navbar-menu'
       className={clsx(
-        'absolute left-0 top-0 mt-16 flex w-full flex-col items-center justify-center gap-8 bg-black/95 py-8',
+        'absolute right-0 top-0 mt-16 flex h-screen flex-col items-end justify-start gap-6 bg-black/95 px-8 pt-8',
         'transition-all duration-300 sm:hidden',
         {
-          '-translate-y-[200%] opacity-0': !menuOpen,
-          'translate-y-0 opacity-100': menuOpen,
+          'translate-x-[200%] opacity-0': !menuOpen,
+          'translate-x-0 opacity-100': menuOpen,
         }
       )}
     >
