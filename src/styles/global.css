@@ -27,7 +27,7 @@ body::before {
   background-repeat: all;
   opacity: 0.5;
   filter: contrast(120%) saturate(110%) hue-rotate(1deg);
-  animation: staticShift 2s steps(4) infinite;
+  animation: staticShift 1s steps(4) infinite;
 }
 
 @keyframes staticShift {
