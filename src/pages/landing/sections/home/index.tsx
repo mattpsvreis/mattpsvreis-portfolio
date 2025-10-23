@@ -59,10 +59,6 @@ export const Home: FC = () => {
               </div>
               <p>
                 <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
-                currently working as a Software Engineer
-              </p>
-              <p>
-                <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
                 {getYearsOfExperience()} years of experience developing complex
                 and varied applications, from intranet systems to end user
                 facing systems with focus on customer and user experience.
