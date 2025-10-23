@@ -38,7 +38,7 @@ export const Main: FC<MainProps> = ({ children }) => {
         className={`fixed left-0 top-0 h-full w-full bg-cover`}
         style={{
           backgroundImage: `url(${scanlines})`,
-          opacity: 0.1,
+          opacity: 0.05,
           filter: 'invert(1)',
           height: screenSize ? `${screenSize}px` : '100%',
         }}

@@ -16,6 +16,29 @@ html {
   scroll-behavior: smooth;
 }
 
+body::before {
+  content: '';
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/scanlinesoverlay.png');
+  background-repeat: all;
+  opacity: 0.5;
+  filter: contrast(120%) saturate(110%) hue-rotate(1deg);
+  animation: staticShift 2s steps(4) infinite;
+}
+
+@keyframes staticShift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 4px;
+  }
+}
+
 .font-roboto {
   font-family: 'Roboto', 'sans-serif';
 }
