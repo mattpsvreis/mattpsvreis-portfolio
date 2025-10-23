@@ -60,7 +60,7 @@ export const Home: FC = () => {
               <p>
                 <span className='text-indigo-500 text-glow'>{'>'}</span>{' '}
                 currently working as a Mid-Level Software Engineer @
-                <span className='font-medium'>{'PagBank '}</span>
+                <span className='font-semibold text-glow'>{' PagBank '}</span>
                 <span className='text-lg italic'>{'(via Invillia)'}</span>
               </p>
               <p>
