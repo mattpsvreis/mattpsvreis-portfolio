@@ -1,6 +1,6 @@
 import { FC, Fragment } from 'react';
 
-import { SectionWrapper } from '../landing/components/section-wrapper';
+import { SectionWrapper } from '../../landing/components/section-wrapper';
 
 export const Piracy: FC = () => {
   return (
@@ -10,7 +10,7 @@ export const Piracy: FC = () => {
           section='top'
           className='text-wider flex max-w-6xl flex-col items-start justify-start'
         >
-          <h1 className='w-full text-center text-5xl font-medium text-indigo-200'>
+          <h1 className='w-full text-center text-5xl font-medium text-indigo-500'>
             In Defense of Piracy: Why Access Should Outweigh Ownership
           </h1>
           <p className='mt-4 indent-4 text-2xl'>
@@ -24,7 +24,7 @@ export const Piracy: FC = () => {
             not as a moral failing, but as a symptom of a broken system, and,
             for many, an act of necessity or resistance.
           </p>
-          <h2 className='mt-4 text-4xl font-medium text-indigo-200'>
+          <h2 className='mt-4 text-4xl font-medium text-indigo-500'>
             1. Digital Goods Are Not Physical Goods
           </h2>
           <p className='mt-4 indent-4 text-2xl'>
@@ -43,7 +43,7 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-4xl font-medium text-indigo-200'>
+          <h2 className='mt-4 text-4xl font-medium text-indigo-500'>
             2. Poverty and the Myth of the Lost Sale
           </h2>
           <p className='mt-4 indent-4 text-2xl'>
@@ -66,7 +66,7 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-4xl font-medium text-indigo-200'>
+          <h2 className='mt-4 text-4xl font-medium text-indigo-500'>
             3. The Vanishing Past: Preservation Through Piracy
           </h2>
           <p className='mt-4 indent-4 text-2xl'>
@@ -88,7 +88,7 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-4xl font-medium text-indigo-200'>
+          <h2 className='mt-4 text-4xl font-medium text-indigo-500'>
             4. Access Over Profit: The Frustration of Legal Consumption
           </h2>
           <p className='mt-4 indent-4 text-2xl'>
@@ -110,7 +110,7 @@ export const Piracy: FC = () => {
               </i>
             </b>
           </p>
-          <h2 className='mt-4 text-4xl font-medium text-indigo-200'>
+          <h2 className='mt-4 text-4xl font-medium text-indigo-500'>
             5. Not Theft, But a Message
           </h2>
           <p className='mt-4 indent-4 text-2xl'>
